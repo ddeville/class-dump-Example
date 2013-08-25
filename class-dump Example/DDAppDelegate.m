@@ -28,8 +28,28 @@
 {
 	NSURL *executableLocation = [[NSBundle mainBundle] executableURL];
 	
-	NSURL *exportLocation = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:[[NSUUID UUID] UUIDString]];
-	[[NSFileManager defaultManager] createDirectoryAtURL:exportLocation withIntermediateDirectories:YES attributes:nil error:NULL];
+	NSURL *exportDirectoryLocation = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:[[NSUUID UUID] UUIDString]];
+	[[NSFileManager defaultManager] createDirectoryAtURL:exportDirectoryLocation withIntermediateDirectories:YES attributes:nil error:NULL];
+	
+	[self setLoading:YES];
+	
+	CDClassDumpOperation *classDumpOperation = [[CDClassDumpOperation alloc] initWithBundleOrExecutableLocation:executableLocation exportDirectoryLocation:exportDirectoryLocation];
+	[[self classDumpOperationQueue] addOperation:classDumpOperation];
+	
+	NSOperation *completionOperation = [NSBlockOperation blockOperationWithBlock:^ {
+		[self setLoading:NO];
+		
+		NSError *exportError = nil;
+		NSURL *exportLocation = [classDumpOperation completionProvider](&exportError);
+		if (exportLocation == nil) {
+			[[NSApplication sharedApplication] presentError:exportError];
+			return;
+		}
+		
+		[[NSWorkspace sharedWorkspace] openURL:exportLocation];
+	}];
+	[completionOperation addDependency:classDumpOperation];
+	[[NSOperationQueue mainQueue] addOperation:completionOperation];
 }
 
 @end

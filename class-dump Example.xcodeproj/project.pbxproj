@@ -513,6 +513,7 @@
 				6DADCB9417C9FF0500803C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
