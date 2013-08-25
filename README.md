@@ -1,4 +1,4 @@
-# class-dump OS X example application
+## class-dump OS X example application
 
 This project is a simple OS X application that makes use of the Cocoa [ClassDump.framework](https://github.com/ddeville/class-dump).
 
