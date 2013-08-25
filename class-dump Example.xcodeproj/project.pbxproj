@@ -14,6 +14,8 @@
 		6DADCB7817C9FF0500803C10 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DADCB7717C9FF0500803C10 /* DDAppDelegate.m */; };
 		6DADCB7B17C9FF0500803C10 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB7917C9FF0500803C10 /* MainMenu.xib */; };
 		6DADCB7D17C9FF0500803C10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB7C17C9FF0500803C10 /* Images.xcassets */; };
+		6DADCBB617CA016000803C10 /* ClassDump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DADCBAB17CA013C00803C10 /* ClassDump.framework */; };
+		6DADCBB817CA017600803C10 /* ClassDump.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 6DADCBAB17CA013C00803C10 /* ClassDump.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,28 @@
 			remoteGlobalIDString = 011E483E1604DF3700722F8D;
 			remoteInfo = UnitTests;
 		};
+		6DADCBB417CA015B00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DCC313517AD24E7000E4A23;
+			remoteInfo = ClassDump;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DADCBB717CA016900803C10 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DADCBB817CA017600803C10 /* ClassDump.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6DADCB6117C9FF0500803C10 /* class-dump Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "class-dump Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DADCBB617CA016000803C10 /* ClassDump.framework in Frameworks */,
 				6DADCB6517C9FF0500803C10 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,10 +225,12 @@
 				6DADCB5D17C9FF0500803C10 /* Sources */,
 				6DADCB5E17C9FF0500803C10 /* Frameworks */,
 				6DADCB5F17C9FF0500803C10 /* Resources */,
+				6DADCBB717CA016900803C10 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6DADCBB517CA015B00803C10 /* PBXTargetDependency */,
 			);
 			name = "class-dump Example";
 			productName = "class-dump Example";
@@ -332,6 +358,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6DADCBB517CA015B00803C10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ClassDump;
+			targetProxy = 6DADCBB417CA015B00803C10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		6DADCB6D17C9FF0500803C10 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -438,6 +472,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "class-dump Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -452,6 +487,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "class-dump Example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
