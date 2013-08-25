@@ -18,7 +18,7 @@
 
 @implementation DDAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void)applicationDidFinishLaunching:(NSNotification *)notification
 {
 	NSOperationQueue *classDumpOpeartionQueue = [[NSOperationQueue alloc] init];
 	[self setClassDumpOperationQueue:classDumpOpeartionQueue];
