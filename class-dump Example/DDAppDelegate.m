@@ -8,6 +8,8 @@
 
 #import "DDAppDelegate.h"
 
+#import "ClassDump/ClassDump.h"
+
 @interface DDAppDelegate ()
 
 @property (strong, nonatomic) NSOperationQueue *classDumpOperationQueue;
@@ -24,7 +26,10 @@
 
 - (IBAction)classDump:(id)sender
 {
+	NSURL *executableLocation = [[NSBundle mainBundle] executableURL];
 	
+	NSURL *exportLocation = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:[[NSUUID UUID] UUIDString]];
+	[[NSFileManager defaultManager] createDirectoryAtURL:exportLocation withIntermediateDirectories:YES attributes:nil error:NULL];
 }
 
 @end
