@@ -1,0 +1,3 @@
+[submodule "Externals/class-dump"]
+	path = Externals/class-dump
+	url = git@github.com:ddeville/class-dump.git
