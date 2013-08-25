@@ -673,8 +673,18 @@
                             </binding>
                         </connections>
                     </button>
+                    <progressIndicator horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Xzo-cs-BWz">
+                        <rect key="frame" x="224" y="118" width="32" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <connections>
+                            <binding destination="494" name="animate" keyPath="self.loading" id="aGl-nc-48U"/>
+                        </connections>
+                    </progressIndicator>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="centerX" secondItem="Xzo-cs-BWz" secondAttribute="centerX" id="9LS-KB-3FE"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xzo-cs-BWz" secondAttribute="bottom" constant="20" symbolic="YES" id="QjA-nq-zL5"/>
+                    <constraint firstItem="Xzo-cs-BWz" firstAttribute="top" secondItem="0ti-GN-oyv" secondAttribute="bottom" constant="20" symbolic="YES" id="YiR-mn-yRt"/>
                     <constraint firstAttribute="centerX" secondItem="0ti-GN-oyv" secondAttribute="centerX" id="cLV-bc-4Ta"/>
                     <constraint firstAttribute="centerY" secondItem="0ti-GN-oyv" secondAttribute="centerY" id="qjh-Dm-g4G"/>
                 </constraints>
