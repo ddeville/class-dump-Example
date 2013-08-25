@@ -16,6 +16,58 @@
 		6DADCB7D17C9FF0500803C10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB7C17C9FF0500803C10 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6DADCBA617CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013D1F1113A5AE5A00BF0A67;
+			remoteInfo = MachObjC;
+		};
+		6DADCBA817CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01EB825F13A590D9003EDE60;
+			remoteInfo = "class-dump";
+		};
+		6DADCBAA17CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DCC313617AD24E7000E4A23;
+			remoteInfo = ClassDump;
+		};
+		6DADCBAC17CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEA959C17AD872C002D079A;
+			remoteInfo = "ClassDump Service";
+		};
+		6DADCBAE17CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 013D1EFB13A5A0F100BF0A67;
+			remoteInfo = deprotect;
+		};
+		6DADCBB017CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01B02CFF13A5B0DC0047BC53;
+			remoteInfo = formatType;
+		};
+		6DADCBB217CA013C00803C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 011E483E1604DF3700722F8D;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		6DADCB6117C9FF0500803C10 /* class-dump Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "class-dump Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DADCB6417C9FF0500803C10 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -32,6 +84,7 @@
 		6DADCB7C17C9FF0500803C10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DADCB8317C9FF0500803C10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6DADCB9817C9FF2D00803C10 /* class-dump Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "class-dump Example.entitlements"; sourceTree = "<group>"; };
+		6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "class-dump.xcodeproj"; path = "Externals/class-dump/class-dump.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				6DADCB6A17C9FF0500803C10 /* class-dump Example */,
+				6DADCB9A17CA013300803C10 /* Externals */,
 				6DADCB6317C9FF0500803C10 /* Frameworks */,
 				6DADCB6217C9FF0500803C10 /* Products */,
 			);
@@ -115,6 +169,28 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		6DADCB9A17CA013300803C10 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		6DADCB9C17CA013C00803C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DADCBA717CA013C00803C10 /* libMachObjC.a */,
+				6DADCBA917CA013C00803C10 /* class-dump */,
+				6DADCBAB17CA013C00803C10 /* ClassDump.framework */,
+				6DADCBAD17CA013C00803C10 /* com.ddeville.classdumpservice.xpc */,
+				6DADCBAF17CA013C00803C10 /* deprotect */,
+				6DADCBB117CA013C00803C10 /* formatType */,
+				6DADCBB317CA013C00803C10 /* UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,12 +241,70 @@
 			mainGroup = 6DADCB5817C9FF0500803C10;
 			productRefGroup = 6DADCB6217C9FF0500803C10 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6DADCB9C17CA013C00803C10 /* Products */;
+					ProjectRef = 6DADCB9B17CA013C00803C10 /* class-dump.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6DADCB6017C9FF0500803C10 /* class-dump Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6DADCBA717CA013C00803C10 /* libMachObjC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMachObjC.a;
+			remoteRef = 6DADCBA617CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBA917CA013C00803C10 /* class-dump */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "class-dump";
+			remoteRef = 6DADCBA817CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBAB17CA013C00803C10 /* ClassDump.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ClassDump.framework;
+			remoteRef = 6DADCBAA17CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBAD17CA013C00803C10 /* com.ddeville.classdumpservice.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = com.ddeville.classdumpservice.xpc;
+			remoteRef = 6DADCBAC17CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBAF17CA013C00803C10 /* deprotect */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = deprotect;
+			remoteRef = 6DADCBAE17CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBB117CA013C00803C10 /* formatType */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = formatType;
+			remoteRef = 6DADCBB017CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DADCBB317CA013C00803C10 /* UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.octest;
+			remoteRef = 6DADCBB217CA013C00803C10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6DADCB5F17C9FF0500803C10 /* Resources */ = {
