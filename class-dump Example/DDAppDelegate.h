@@ -12,4 +12,8 @@
 
 @property (assign, nonatomic) IBOutlet NSWindow *window;
 
+- (IBAction)classDump:(id)sender;
+
+@property (assign, getter = isLoading, nonatomic) BOOL loading;
+
 @end
