@@ -14,21 +14,7 @@
 		6DADCB7817C9FF0500803C10 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DADCB7717C9FF0500803C10 /* DDAppDelegate.m */; };
 		6DADCB7B17C9FF0500803C10 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB7917C9FF0500803C10 /* MainMenu.xib */; };
 		6DADCB7D17C9FF0500803C10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB7C17C9FF0500803C10 /* Images.xcassets */; };
-		6DADCB8417C9FF0500803C10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DADCB8317C9FF0500803C10 /* XCTest.framework */; };
-		6DADCB8517C9FF0500803C10 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DADCB6417C9FF0500803C10 /* Cocoa.framework */; };
-		6DADCB8D17C9FF0500803C10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DADCB8B17C9FF0500803C10 /* InfoPlist.strings */; };
-		6DADCB8F17C9FF0500803C10 /* class_dump_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DADCB8E17C9FF0500803C10 /* class_dump_ExampleTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6DADCB8617C9FF0500803C10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6DADCB5917C9FF0500803C10 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6DADCB6017C9FF0500803C10;
-			remoteInfo = "class-dump Example";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6DADCB6117C9FF0500803C10 /* class-dump Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "class-dump Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,20 +22,16 @@
 		6DADCB6717C9FF0500803C10 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		6DADCB6817C9FF0500803C10 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		6DADCB6917C9FF0500803C10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6DADCB6C17C9FF0500803C10 /* class-dump Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "class-dump Example-Info.plist"; sourceTree = "<group>"; };
+		6DADCB6C17C9FF0500803C10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DADCB6E17C9FF0500803C10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DADCB7017C9FF0500803C10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6DADCB7217C9FF0500803C10 /* class-dump Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "class-dump Example-Prefix.pch"; sourceTree = "<group>"; };
 		6DADCB7417C9FF0500803C10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		6DADCB7617C9FF0500803C10 /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		6DADCB7717C9FF0500803C10 /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
 		6DADCB7A17C9FF0500803C10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6DADCB7C17C9FF0500803C10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6DADCB8217C9FF0500803C10 /* class-dump ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "class-dump ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DADCB8317C9FF0500803C10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6DADCB8A17C9FF0500803C10 /* class-dump ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "class-dump ExampleTests-Info.plist"; sourceTree = "<group>"; };
-		6DADCB8C17C9FF0500803C10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6DADCB8E17C9FF0500803C10 /* class_dump_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = class_dump_ExampleTests.m; sourceTree = "<group>"; };
+		6DADCB9817C9FF2D00803C10 /* class-dump Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "class-dump Example.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +43,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DADCB7F17C9FF0500803C10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DADCB8517C9FF0500803C10 /* Cocoa.framework in Frameworks */,
-				6DADCB8417C9FF0500803C10 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +50,6 @@
 			isa = PBXGroup;
 			children = (
 				6DADCB6A17C9FF0500803C10 /* class-dump Example */,
-				6DADCB8817C9FF0500803C10 /* class-dump ExampleTests */,
 				6DADCB6317C9FF0500803C10 /* Frameworks */,
 				6DADCB6217C9FF0500803C10 /* Products */,
 			);
@@ -87,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				6DADCB6117C9FF0500803C10 /* class-dump Example.app */,
-				6DADCB8217C9FF0500803C10 /* class-dump ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,8 +89,9 @@
 				6DADCB7617C9FF0500803C10 /* DDAppDelegate.h */,
 				6DADCB7717C9FF0500803C10 /* DDAppDelegate.m */,
 				6DADCB7917C9FF0500803C10 /* MainMenu.xib */,
-				6DADCB7C17C9FF0500803C10 /* Images.xcassets */,
+				6DADCB9917C9FF3E00803C10 /* Other Sources */,
 				6DADCB6B17C9FF0500803C10 /* Supporting Files */,
+				6DADCB7C17C9FF0500803C10 /* Images.xcassets */,
 			);
 			path = "class-dump Example";
 			sourceTree = "<group>";
@@ -127,31 +99,20 @@
 		6DADCB6B17C9FF0500803C10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DADCB6C17C9FF0500803C10 /* class-dump Example-Info.plist */,
+				6DADCB6C17C9FF0500803C10 /* Info.plist */,
 				6DADCB6D17C9FF0500803C10 /* InfoPlist.strings */,
-				6DADCB7017C9FF0500803C10 /* main.m */,
-				6DADCB7217C9FF0500803C10 /* class-dump Example-Prefix.pch */,
+				6DADCB9817C9FF2D00803C10 /* class-dump Example.entitlements */,
 				6DADCB7317C9FF0500803C10 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6DADCB8817C9FF0500803C10 /* class-dump ExampleTests */ = {
+		6DADCB9917C9FF3E00803C10 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6DADCB8E17C9FF0500803C10 /* class_dump_ExampleTests.m */,
-				6DADCB8917C9FF0500803C10 /* Supporting Files */,
+				6DADCB7017C9FF0500803C10 /* main.m */,
 			);
-			path = "class-dump ExampleTests";
-			sourceTree = "<group>";
-		};
-		6DADCB8917C9FF0500803C10 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6DADCB8A17C9FF0500803C10 /* class-dump ExampleTests-Info.plist */,
-				6DADCB8B17C9FF0500803C10 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +135,6 @@
 			productReference = 6DADCB6117C9FF0500803C10 /* class-dump Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6DADCB8117C9FF0500803C10 /* class-dump ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6DADCB9517C9FF0500803C10 /* Build configuration list for PBXNativeTarget "class-dump ExampleTests" */;
-			buildPhases = (
-				6DADCB7E17C9FF0500803C10 /* Sources */,
-				6DADCB7F17C9FF0500803C10 /* Frameworks */,
-				6DADCB8017C9FF0500803C10 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6DADCB8717C9FF0500803C10 /* PBXTargetDependency */,
-			);
-			name = "class-dump ExampleTests";
-			productName = "class-dump ExampleTests";
-			productReference = 6DADCB8217C9FF0500803C10 /* class-dump ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,8 +145,12 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Damien DeVille";
 				TargetAttributes = {
-					6DADCB8117C9FF0500803C10 = {
-						TestTargetID = 6DADCB6017C9FF0500803C10;
+					6DADCB6017C9FF0500803C10 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -221,7 +168,6 @@
 			projectRoot = "";
 			targets = (
 				6DADCB6017C9FF0500803C10 /* class-dump Example */,
-				6DADCB8117C9FF0500803C10 /* class-dump ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,14 +184,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DADCB8017C9FF0500803C10 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DADCB8D17C9FF0500803C10 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,23 +196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DADCB7E17C9FF0500803C10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DADCB8F17C9FF0500803C10 /* class_dump_ExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6DADCB8717C9FF0500803C10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6DADCB6017C9FF0500803C10 /* class-dump Example */;
-			targetProxy = 6DADCB8617C9FF0500803C10 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6DADCB6D17C9FF0500803C10 /* InfoPlist.strings */ = {
@@ -299,14 +221,6 @@
 				6DADCB7A17C9FF0500803C10 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		6DADCB8B17C9FF0500803C10 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DADCB8C17C9FF0500803C10 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -386,10 +300,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "class-dump Example/class-dump Example.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "class-dump Example/class-dump Example-Prefix.pch";
-				INFOPLIST_FILE = "class-dump Example/class-dump Example-Info.plist";
+				INFOPLIST_FILE = "class-dump Example/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,52 +314,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "class-dump Example/class-dump Example.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "class-dump Example/class-dump Example-Prefix.pch";
-				INFOPLIST_FILE = "class-dump Example/class-dump Example-Info.plist";
+				INFOPLIST_FILE = "class-dump Example/Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6DADCB9617C9FF0500803C10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/class-dump Example.app/Contents/MacOS/class-dump Example";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "class-dump Example/class-dump Example-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "class-dump ExampleTests/class-dump ExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6DADCB9717C9FF0500803C10 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/class-dump Example.app/Contents/MacOS/class-dump Example";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "class-dump Example/class-dump Example-Prefix.pch";
-				INFOPLIST_FILE = "class-dump ExampleTests/class-dump ExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -465,14 +341,6 @@
 			buildConfigurations = (
 				6DADCB9317C9FF0500803C10 /* Debug */,
 				6DADCB9417C9FF0500803C10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		6DADCB9517C9FF0500803C10 /* Build configuration list for PBXNativeTarget "class-dump ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DADCB9617C9FF0500803C10 /* Debug */,
-				6DADCB9717C9FF0500803C10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -10,6 +10,6 @@
 
 @interface DDAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign, nonatomic) IBOutlet NSWindow *window;
 
 @end
