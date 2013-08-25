@@ -8,11 +8,18 @@
 
 #import "DDAppDelegate.h"
 
+@interface DDAppDelegate ()
+
+@property (strong, nonatomic) NSOperationQueue *classDumpOperationQueue;
+
+@end
+
 @implementation DDAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	
+	NSOperationQueue *classDumpOpeartionQueue = [[NSOperationQueue alloc] init];
+	[self setClassDumpOperationQueue:classDumpOpeartionQueue];
 }
 
 - (IBAction)classDump:(id)sender
