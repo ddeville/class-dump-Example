@@ -652,11 +652,12 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <value key="minSize" type="size" width="200" height="100"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ti-GN-oyv">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ti-GN-oyv">
                         <rect key="frame" x="159" y="163" width="163" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="class-dump myself!" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4sW-fO-2zK">
@@ -673,6 +674,10 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="0ti-GN-oyv" secondAttribute="centerX" id="cLV-bc-4Ta"/>
+                    <constraint firstAttribute="centerY" secondItem="0ti-GN-oyv" secondAttribute="centerY" id="qjh-Dm-g4G"/>
+                </constraints>
             </view>
         </window>
         <customObject id="494" customClass="DDAppDelegate">
